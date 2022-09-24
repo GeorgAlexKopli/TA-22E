@@ -1,8 +1,11 @@
-const temperature = 45
-if (temperature >= 21 && temperature <= 40) {
-    console.log("0"); //Temp on paras
-} if (temperature <= 20 && temperature >= 0) {
-    console.log("-1"); //Temp on liiga madal
-} if (temperature >= 41 && temperature <= 60) {
-    console.log("+1"); //Temp on liiga kõrge
-} 
+function checkTemp(temp) {
+    if (temp>=0 && temp<=20) {
+        return -1
+    }
+    else if (temp>=21 && temp<=40) {
+        return 0
+    }
+    else if (temp>=41 && temp<=60) {
+        return 1
+    }
+}
