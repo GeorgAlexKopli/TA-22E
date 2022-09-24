@@ -1,11 +1,11 @@
-function checkTemp(temperatuur) {
-    if (temperatuur>=0 && temperatuur<=20) {
+function checkTemp(temp) {
+    if (temp>=0 && temp<=20) {
         return -1
     }
-    else if (temperatuur>=21 && temperatuur<=40) {
+    else if (temp>=21 && temp<=40) {
         return 0
     }
-    else if (temperatuur>=41 && temperatuur<=60) {
+    else if (temp>=41 && temp<=60) {
         return 1
     }
 }
